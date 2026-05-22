@@ -1,8 +1,8 @@
-from filter import filter_by_min_genes, filter_by_type, filter_interactions_by_regulon
-from io_util import load_interactions
-from core import build_regulon
-from exporters import write_summary, write_sif
-from cli import parse_arguments
+from .filters import filter_by_min_genes, filter_by_type, filter_interactions_by_regulon
+from .io_utils import load_interactions
+from .core import build_regulon
+from .exporters import write_summary, write_sif
+from .cli import parse_arguments
 
 # =========================================
 # Responsabilidad: Leer el archivo de interacciones y construir una estructura de datos que contenga la información relevante para cada TF.
