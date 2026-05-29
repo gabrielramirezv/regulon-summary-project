@@ -1,0 +1,12 @@
+[project]
+name = "regulon-summary"
+version = "0.1.0"
+description = "Summarize transcription factor regulons from regulator-gene interactions."
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "matplotlib",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
