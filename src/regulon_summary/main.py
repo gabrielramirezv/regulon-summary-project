@@ -42,7 +42,23 @@ def main():
         )
         write_sif(filtered_interactions, args.output_file)
 
+    if args.plot == "top_regulators":
+        plot_top_regulators(
+            regulon,
+            args.plot_file,
+            top_n=args.top_n,
+        )
+
+    elif args.plot == "type_distribution":
+        plot_type_distribution(
+            regulon,
+            args.plot_file,
+        )
+
     print(f"Archivo generado: {args.output_file}")
+
+    if args.plot != "none":
+        print(f"Gráfica generada: {args.plot_file}")
 
 
 
